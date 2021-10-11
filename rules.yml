@@ -1,0 +1,68 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  
+- rule: loan
+  steps:
+  - intent: typ_loan
+  - action: utter_loan_step
+  
+- rule: account balancea
+  steps:
+  - intent: acc_balancea
+  - action: utter_balancea
+  
+- rule: account balanceb
+  steps:
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  
+- rule: account balancec
+  steps:
+  - intent: acc_balancec
+  - action: utter_balancec
+  
+- rule: account balanced
+  steps:
+  - intent: acc_balanced
+  - action: utter_balanced
+  
+- rule: account balancef
+  steps:
+  - intent: acc_balancef
+  - action: utter_balancef
+  
+- rule: min account balancef
+  steps:
+  - intent: acc_minaccbalance
+  - action: utter_minaccbalance
+  
+- rule: update mobile nos
+  steps: 
+  - intent: updatemobileno
+  - action: utter_updatemobileno
+  
+- rule: customer care no
+  steps:
+  - intent: customercareno
+  - action: utter_customercareno
+  
+- rule: generate pins
+  steps:  
+  - intent: generatepin
+  - action: utter_generatepin
+    
+- rule: unblock debit card
+  steps:
+  - intent: unblockdebitcard
+  - action: utter_unblockdebitcard
