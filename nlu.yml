@@ -1,0 +1,692 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - yup
+    - yeah
+    - s
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: whatsapp_banking
+  examples: |
+    - whatsapp banking
+    - payment on whatsapp
+    - whatsapp payment
+
+- intent: apply_loan
+  examples: |
+   - How can I apply loan?
+   - How to get loan
+   - receive loan
+   - I need to get loan?
+   - i need loan?
+
+- intent: typ_loan
+  examples: |
+   - car loan
+   - i need car loan
+   - How can i get car loan
+   - home loan
+   - How can i get home loan
+   - i need home loan
+   - gold loan
+   - i need gold loan
+   - how to apply education loan?
+   - how to apply gold loan?
+   - educational loan
+   - Education
+  
+- intent: doubt_1
+  examples: |
+    - I have a doubt
+    - we have a doubt
+    - have a doubt
+
+- intent: doubt_2
+  examples: |
+    - can u help me?
+    - can you help me?
+    - would you help me?
+    - would u help me?
+    
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: bot_who
+  examples: |
+    - who are you?
+    - who r u?
+    - whats your name?
+    - what is your name?
+    
+- intent: aadhar_pan_1
+  examples: |
+    - how can I link my pancard to aadharcard?
+    - how can i link my pan and aadhar?
+    - how can i link my aadhar and pan?
+    - how can i link my aadharcard and pancard?
+    - link aadhar pan
+    - link pan aadhar
+    - aadharcard pancard linking
+    - aadharcard and pancard linking
+    - pancard adharcard linking
+    - pancard and aadharcard linking
+    - pan to aadhar linking
+    - aadhar and pan linking
+    - pan and aadhar linking
+    - online aadharcard pancard linking
+    - how to link aadharcard and pancard in online?
+    - how to link pancard and aadharcard in online?
+    - how to link pancard to aadharcard in online?
+    - how to link aadhar and pan in online?
+    - how to link pan and aadhar in online?
+    - how to link pan to aadhar in online?
+    - what is the procedure to link aadharcard and pancard in online?
+    - what is the procedure to link pancard and aadharcard in online?
+    - what is the procedure to link pancard to aadharcard in online?
+    - what is the procedure to link aadhar and pan in online?
+    - what is the procedure to link pan and aadhar in online?
+    - what is the procedure to link pan to aadhar in online?
+    - steps to link aadharcard and pancard
+    - steps to link pancard and aadharcard
+    - steps to link pancard to aadharcard
+    - steps to link aadhar and pan
+    - steps to link pan and aadhar
+    - steps to link pan to aadhar
+    - how should i link pancard to aadharcard?
+    - how should we link pancard to aadharcard?
+    - how should i link pan to aadhar?
+    - how should we link pan to aadhar?
+    - how should i link pancard and aadharcard?
+    - how should we link pancard and aadharcard?
+    - how should i link pan to aadhar?
+    - how should we link pan to aadhar?
+    
+- intent: aadhar_pan_2
+  examples: |
+    - can we link pancard to aadharcard?
+    - can I link pancard to aadharcard?
+    - can we link aadharcard and pancard?
+    - can I link aadharcard and pancard?
+    - can we link aadhar and pan?
+    - can I link aadhar and pan?
+    - can we link pancard and aadharcard?
+    - can I link pancard and aadharcard?
+    - can we link pan and aadhar?
+    - can I link pan and aadhar?
+    - can we link pan to aadhar?
+    - can I link pan to aadhar?
+    - can we link aadhar and pan?
+    - can I link aadhar and pan?
+    - Is it possible to link pan to aadhar?
+    
+- intent: aadhar_pan_3
+  examples: |
+    - why do we need to link pancard to aadharcard?
+    - why do I need to link pancard to aadharcard?
+    - why do we need to link pan to aadhar?
+    - why do I need to link pan to aadhar?
+    - why do we need to link pancard and aadharcard?
+    - why do I need to link pancard and aadharcard?
+    - why do we need to link pan and aadar?
+    - why do I need to link aadhar and pan?
+    - Is it beneficial for us to link pancard to aadharcard?
+    - Is it beneficial for us to link pan to aadhar?
+    - Is it beneficial for me to link pancard to aadharcard?
+    - Is it beneficial for me to link pan to aadhar?
+    - Is it beneficial to link pan to aadhar?
+    - Is it beneficial to link pan and aadhar?
+    - Is it beneficial to link aadhar and pan?
+    - Is it beneficial to link pancard to aadharcard?
+    - Is it beneficial to link pancard and aadharcard?
+    - Is it beneficial to link aadharcard and pancard?
+    - whether it is beneficial for us to link pancard to aadharcard?
+    - whether it is beneficial for us to link pan to aadhar?
+    - whether it is beneficial for me to link pancard to aadharcard?
+    - whether it is beneficial for me to link apan to aadhar?
+    - what is the need to link pancard to aadharcard?
+    - what is the need to link pan to aadhar?
+    - what is the need to link pancard and aadharcard?
+    - what is the need to link pan and aadhar?
+    - what is the need to link aadharcard and pancard?
+    - what is the need to link aadhar and pan?
+    
+- intent: aadhar_pan_4
+  examples: |
+    - do we need to link pancard to aadharcard?
+    - do I need to link pancard to aadharcard?
+    - do we need to link pan to aadhar?
+    - do I need to link pan to aadhar?
+    - do we need to link pancard and aadharcard?
+    - do I need to link pancard and aadharcard?
+    - do we need to link pan and aadar?
+    - do I need to link aadhar and pan?
+    - should we need to link pancard to aadharcard?
+    - should I need to link pancard to aadharcard?
+    - should we need to link pan to aadhar?
+    - should I need to link pan to aadhar?
+    - should we need to link pancard and aadharcard?
+    - should I need to link pancard and aadharcard?
+    - should we need to link pan and aadar?
+    - should I need to link aadhar and pan?
+    - should we link aadhar and pan?
+    
+- intent: aadhar_q_1
+  examples: |
+    - Where can I enrol for Aadhaar?
+    - Where to enrol for Aadhaar?
+    - how to enrol for Aadhaar?
+
+- intent: aadhar_q_2
+  examples: |
+    - What are the documents required for enrolment for Aadhaar?
+    - What are the documents required to enrol for Aadhaar?
+    - documents required for enrolment for Aadhaar?
+    - to enrol aadhar what are the documents required?
+
+- intent: acc_transfera
+  examples: |
+    - transfer
+    - transfer cash
+    - transfer money from account to account
+    - how to transfer money
+    - send money
+    - ways to transfer money
+    - money
+    - money in bank
+    - details to send money to someone
+    
+- intent: acc_transferb
+  examples: |
+    - online money transfer
+    - net banking
+    - without going to bank
+    - without visiting
+    - fastest way to send money
+    - money through online
+- intent: acc_transferc
+  examples: |
+    - transfer money offline
+    - offline fund transfer
+    - through branch
+    - money through bank
+- intent: acc_transfero
+  examples: |
+    - didint get the otp
+    - did not receive otp
+    - otp not received
+    - no otp
+- intent: acc_transferq
+  examples: |
+    - conformation not received
+    - no message received
+    - i didint get any conformation message
+    - i didint get any conformation sms
+    - message not received
+    - sms not received
+    - conformation not yet received
+    - did not get conformation after payment
+    - acknowledgement not received
+- intent: acc_balancea
+  examples: |
+    - check my balance
+    - know amount in account
+    - balance amount in account
+    - remaining money
+    - account balance
+    - know my account balance
+    - balance check
+    - money left in my account
+- intent: acc_balanceb
+  examples: |
+    - by sms
+    - sms
+    - check balance by sms
+    - with sms
+    - through sms
+    - message service
+    - see balance by sms
+    - know my account balance by sms
+    - check balance by message
+    - see balamce by message
+    - money left in my account
+- intent: acc_balancec
+  examples: |
+    - call service
+    - by call
+    - By calling the bank
+    - check balance by missed call
+    - check balance by toll free number
+    - check balance quickly
+    - see my balnce with call
+    - check balance by call
+    - check balance by calling
+- intent: acc_balanced
+  examples: |
+    - net banking
+    - check balance by net banking
+    - through net banking
+    - how to check my account balance using net banking
+    - know my balance using net
+    - check balance in icici net banking
+- intent: acc_balancee
+  examples: |
+    - check balance using app
+    - using app
+    - see my balance using app
+    - see my balance using i mobile app
+    - how to know my balance using i mobile app
+    - check balance using i mobile app
+- intent: acc_balancef
+  examples: |
+    - balance in atm
+    - balance in ATM
+    - check account balance in ATM
+    - check balance throutgh atm
+    - money left in my account through atm
+    - see balance in atm
+    - check balance in atm
+    - know balance in atm
+    - know my balance through atm
+- intent: acc_minaccbalance
+  examples: |
+    - minimum balance amount
+    - min balance
+    - minimum account balance
+    - what is the minimum account balance
+    - minimum amount for opening account
+- intent: investment_q_1
+  examples: |
+    - Can I redeem my Fixed deposit before the original term?
+    - Can we redeem my Fixed deposit before the original term?
+    - Can i break my Fixed deposit before the original tenture?
+    - Can i withdraw money from my Fixed deposit before the original term?
+    - Can i take money from my Fixed deposit before the original term?
+    - Can i take back the money from my Fixed deposit before the premature withdrawal?
+    
+- intent: investment_q_2
+  examples: |
+    - How do I redeem my Fixed Deposit?
+    - How to redeem my Fixed Deposit?
+    
+- intent: investment_q_3
+  examples: |
+    - How to check if (Fixed Deposit) FD is created?
+    - How to check if FD is created or not?
+    - How to check whether FD is created?
+    - How to check whether FD is created or not? 
+    - how to know whether the FD is created?
+
+- intent: investment_q_4
+  examples: |
+    - What is the interest rate on Fixed Deposit (FD) for senior citizens?
+    - Interest rate on FD for senior citizens?
+
+- intent: investment_q_5
+  examples: |
+    - How do I approach Bank to open a FD for Fixed Deposit?
+    - How to do fixed deposit?
+    - How to do FD?
+    - How can we do fixed deposite in bank?
+    - How can we do deposite money in the bank?
+
+- intent: investment_q_6
+  examples: |
+    - What is the use of fixed deposite?
+    - What is the use of FD?
+    - What are the benefits of fixed deposite?
+    - how can we get a profit using fixed deposite?
+    
+- intent: recharge_q_1
+  examples: |
+    - how to recharge the mobile?
+    - how to recharge the phone?
+    - phone recharge
+    - mobile phone recharge
+    - mobile recharge
+    - what are the types of mobile recharge
+
+- intent: recharge_q_2
+  examples: |
+    - how to recharge data?
+    - how to recharge internet?
+    - how to recharge mobile data?
+    
+- intent: recharge_q_3
+  examples: |
+    - how to recharge the FASTag?
+    - FASTag recharge
+    - how FASTag can be recharged?
+    - from where can we recharge FASTag?
+    
+- intent: recharge_q_4
+  examples: |
+    - how to recharge the DTH?
+    - DTH recharge
+    - how DTH can be recharged?
+    - from where can we recharge DTH?
+
+- intent: recharge_q_5
+  examples: |
+    - how to recharge the Electricity bill?
+    - Electricity bill recharge
+    - how electricity bill can be recharged?
+    - from where can we recharge electricity bill?
+    
+- intent: recharge_q_6
+  examples: |
+    - how to recharge the Broadband?
+    - how to recharge the Landline?
+    - Broadband recharge
+    - how Broadband can be recharged?
+    - from where can we recharge Broadband?
+    - Landline recharge
+    - how Landline can be recharged?
+    - from where can we recharge Landline?
+
+- intent: recharge_q_7
+  examples: |
+    - how to recharge for the Subscriptions?
+    - Subscriptions recharge
+    - how TV subscription bills can be recharged?
+    - from where can we recharge TV subscriptions?
+    - how to pay the bill for disney + hotstar?
+    - how to pay the bill for disney plus hotstar?
+    - how to pay the bill for Amazon prime?
+    - how to pay the bill for prime? 
+    - how to pay the bill for zee5?
+    - how to pay the bill for disney?
+    - how to get subscription for netflix?   
+    - bill payment for disney + hotstar subscription?
+    - bill payment for disney plus hotstar subscription?
+    - bill payment for Amazon prime subscription?
+    - bill payment for Prime subscription?
+    - bill payment for zee5 subscription?
+    - how to pay bill for the TV subscription?
+    
+- intent: recharge_q_8
+  examples: |
+    - how to recharge the Credit card bill?
+    - how to pay my credit card bills?
+    - Credit card recharge
+    - Credit card payment
+    - how Credit card can be recharged?
+    - from where can we recharge credit card?
+    - from where can the credit card payment be done?
+    
+- intent: updatemobileno
+  examples: |
+    - how to update my mobile number
+    - update mobile number
+    - update number
+    - mobile number update
+    - change number
+    - change mobile number
+    
+- intent: customercareno
+  examples: |
+    - customer care
+    - bank contact number
+    - what is the bank customer care number
+    - bank helpline number
+    - bank phone number
+    - number to contact bank
+    
+- intent: generatepin
+  examples: |
+    - how to change my atm pin?
+    - how to generate pin
+    - pin generation
+    - new pin generate
+    - new pin
+    - pin for new card
+    
+- intent: unblockdebitcard
+  examples: |
+    - unblock my debit card
+    - unlock my debit card
+    - debit card locked
+    - debit card blocked
+    - activate my card
+    - activate my debit card
+    - unblock my atm card
+    - unlock my atm card
+    - atm card locked
+    - atm card blocked
+    - activate my card
+    - activate my atm card
+    
+- intent: debit_card_work
+  examples: |
+    - Debit Card is not working
+    - no response
+    - why i cant pay with my debit card
+- intent: fees_in_transaction
+  examples: |
+    - Debit Card for retail or online transactions?
+- intent: debit_card_expire
+  examples: |
+    - My Debit Card is going to expire soon, should I apply for a new debit card?
+    - expiring
+- intent: charge_debit_replacement
+  examples: |
+    - Will there be any fee which will be charged for replacement debit card?
+    - do i have to pay for replacing my debit card?
+- intent: pin_block_procedure
+  examples: |
+    - What is the procedure to follow if my Debit Card PIN is blocked?
+    - unlock
+    - how to unlock my debit card
+- intent: limit_transaction
+  examples: |
+    - Are there any limits or restrictions on transactions?
+    - disadvantage
+    - limitations
+    - draw backs
+- intent: iam_blocking
+  examples: |
+    - How can I block my Debit Card?
+    - iam blocking my account
+    - is it possible so that i can block my account
+
+- intent: dc_retailTransaction
+  examples: |
+    - How to use a debit card for retail transactions?
+    - can i pay my retail charges using debit card
+    - how can i make retail transaction using debit card
+    
+- intent: dc_issueDate
+  examples: |
+    - How can I find out when my debit card was issued to me?
+    - what is the issue or established date of my debit card?
+    - from when my debit card is valid?
+    
+- intent: dc_domesticPayment
+  examples: |
+    - Can the debit card be used for domestic money transfers as well?
+    - Is my debit card is eligible for domestic payment?
+    - How to transfer domestic payment using my debit card?
+    
+- intent: dc_forget_pin
+  examples: |
+    - How can I change my Debit Card PIN, in case I forget it?
+    - procedure to change my debit card pin?
+    - iam forget my debit card pin number?
+    
+- intent: dc_pin_safe
+  examples: |
+    - Is my online transaction secure when I am not being asked for a PIN?
+    - can i make online transaction with out using pin?
+    - is providing pin in online transaction is safe?
+    
+- intent: dc_stolen
+  examples: |
+    - What if my ICICI Bank Visa Debit card is stolen?
+    - my debit card is stolen
+    - can i retain my money if my debit card is stolen
+    - what can i do to safe gaurd my debit card if my card is stolen?
+    
+- intent: dc_register
+  examples: |
+    - How can I apply for an ICICI Bank Debit Card?
+    - how to get my debit card?
+    - is it possible to register for my debit card online?
+    - How can I register for an ICICI Bank Debit Card?
+    - How can I get for an ICICI Bank Debit Card?
+    
+- intent: dc_ch_limit
+  examples: |
+    - Is it possible to change limits on my Debit Card?
+    - how can i change the limits on my debit card?
+    
+- intent: dc_dailyLimit
+  examples: |
+    - What are the daily usage limits for my debit card for usage at ATMs and merchant outlets?
+    - what is the daily usage limit for my debit card in ATM?
+    
+- intent: dc_validity
+  examples: |
+    - What is the validity of ICICI Bank Expressions Debit Card?
+    - is my debit card is valid for 5 years?
+    - how to know the validity period of my debit card?
+    
+- intent: dc_replDamage
+  examples: |
+    - What is the procedure to replace a damaged Debit Card?
+    - steps to replace a damaged Debit Card?
+    - can i change my damaged Debit Card?
+    - is it possible to replace a damaged Debit Card?
+- intent: dc_mobReg
+  examples: |
+    - How can I know whether my mobile number is registered with ICICI Bank?
+    - how can i verify my mobile number is registered with ICICI Bank?
+    - is my mobile number registered with ICICI Bank?
+    
+- intent: dc_autoRecharge
+  examples: |
+    - Whom should I contact if I want to deactivate the auto recharge facility for Unifare Mumbai Metro Debit Cards?
+    - i want to deactivate the auto recharge facility for Unifare Mumbai Metro Debit Cards
+    - i did not want the auto recharge facilitiy
+    
+- intent: dc_deactDC
+  examples: |
+    - how to deactivate my debit card through online?
+    - can i able to deactivate my debit card in online?
+    - is it possible to deactivate my debit card?
+    
+- intent: dc_actDC
+  examples: |
+    - how to activate my debit card through online?
+    - can i able to activate my debit card in online?
+    - is it possible to activate my debit card?
+    
+- intent: dc_senderCharge
+  examples: |
+    - How much does it cost my Sender to send me money?
+    - how much will it be charged for the sender to send me money?
+    - money charged to the sender to send money?
+    
+- intent: branchlocator_c
+  examples: |
+    - [chennai]{"entity":"city","value":"chennai"}
+    - [madras]{"entity":"city","value":"chennai"}
+    - show me the icici bank [branches](https://cloud.google.com/natural-language) in [chennai]{"entity":"city","value":"chennai"}
+    - bank branches in [chennai]{"entity":"city","value":"chennai"}
+    - give me the address of icici bank branches in [chennai]{"entity":"city","value":"chennai"}
+
+- intent: branchlocator_b
+  examples: |
+    - [bangalore]{"entity":"city","value":"bangalore"}
+    - show me the icici bank branches in [bangalore]{"entity":"city","value":"bangalore"}
+    - bank branches in [bangalore]{"entity":"city","value":"bangalore"}
+    - give me the address of icici bank branches in [bangalore]{"entity":"city","value":"bangalore"}
+    
+- intent: branchlocator_m
+  examples: |    
+    - [mumbai]{"entity":"city","value":"mumbai"}
+    - show me the icici bank branches in [mumbai]{"entity":"city","value":"mumbai"}
+    - bank branches in [mumbai]{"entity":"city","value":"mumbai"}
+    - give me the address of icici bank branches in [mumbai]{"entity":"city","value":"mumbai"}

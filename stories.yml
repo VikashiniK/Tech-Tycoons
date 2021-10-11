@@ -1,0 +1,816 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: whatsapp_pay
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: whatsapp_banking
+  - action: utter_whatsapp_banking
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: apply loan 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: apply_loan
+  - action: utter_apploan
+  - action: utter_typloan
+  - intent: typ_loan
+  - action: utter_loan_step
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_goodbye
+  
+- story: apply loan 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: apply_loan
+  - action: utter_apploan
+  - action: utter_typloan
+  - intent: typ_loan
+  - action: utter_loan_step
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Hi_bye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: doubt_stry 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: doubt_1
+  - action: utter_doubt_res1
+  
+- story: doubt_stry 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: doubt_2
+  - action: utter_doubt_res2
+  
+- story: aadhar_pan 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: aadhar_pan_1
+  - action: utter_aadharpan1
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: aadhar_pan 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: aadhar_pan_2
+  - action: utter_yes_s
+  - action: utter_aadharpan1
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: aadhar_pan 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: aadhar_pan_3
+  - action: utter_aadharpan3
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: aadhar_pan 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: aadhar_pan_4
+  - action: utter_yes_s 
+  - action: utter_aadharpan3
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: aadhar q 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: aadhar_q_1
+  - action: utter_aadharq1
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: aadhar q 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: aadhar_q_2
+  - action: utter_aadharq2
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: transfersa path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: acc_transfera
+  - action: utter_transfera
+  
+- story: transfersa path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  
+- story: transfersa path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: acc_transferc
+  - action: utter_transferc
+  
+  
+- story: transfersa path 4
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  
+- story: transferso path 1
+  steps:
+  - intent: acc_transfero
+  - action: utter_transfero  
+    
+- story: transferso path 2
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transfero
+  - action: utter_transfero
+
+- story: transfersq path 1
+  steps:
+  - intent: acc_transferq
+  - action: utter_transferq  
+    
+- story: transfersq path 2
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  
+  
+- story: balancesa path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  
+
+    
+    
+- story: balancesb path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb 
+  
+- story: balancesc path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  - intent: acc_balancec
+  - action: utter_balancec
+  
+- story: balancesd path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  - intent: acc_balancec
+  - action: utter_balancec
+  - intent: acc_balanced
+  - action: utter_balanced
+  
+- story: balancese path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  - intent: acc_balancec
+  - action: utter_balancec
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancee
+  - action: utter_balancee
+  
+- story: balancesf path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  - intent: acc_balancec
+  - action: utter_balancec
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancef
+  - action: utter_balancef
+  
+- story: minaccbalance path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  - intent: acc_balancec
+  - action: utter_balancec
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancef
+  - action: utter_balancef
+  - intent: acc_minaccbalance
+  - action: utter_minaccbalance
+
+- story: investment_q1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: investment_q_1
+  - action: utter_yes_s
+  - action: utter_investmentq1
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: investment_q2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: investment_q_2
+  - action: utter_investmentq2
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: investment_q3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: investment_q_3
+  - action: utter_investmentq3
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: investment_q4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: investment_q_4
+  - action: utter_investmentq4
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+
+- story: investment_q5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: investment_q_5
+  - action: utter_investmentq5
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: investment_q6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: investment_q_6
+  - action: utter_investmentq6
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: recharge_q1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recharge_q_1
+  - action: utter_rechargeq1
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: recharge_q2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recharge_q_2
+  - action: utter_rechargeq2
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: recharge_q3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recharge_q_3
+  - action: utter_rechargeq3
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: recharge_q4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recharge_q_4
+  - action: utter_rechargeq4
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: recharge_q5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recharge_q_5
+  - action: utter_rechargeq5
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: recharge_q6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recharge_q_6
+  - action: utter_rechargeq6
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: recharge_q7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recharge_q_7
+  - action: utter_rechargeq7
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: recharge_q8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recharge_q_8
+  - action: utter_rechargeq8
+  - action: utter_hope
+  - intent: affirm
+  - action: utter_lot
+  
+- story: updatemobilenos path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  - intent: acc_balancec
+  - action: utter_balancec
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancef
+  - action: utter_balancef
+  - intent: acc_minaccbalance
+  - action: utter_minaccbalance
+  - intent: updatemobileno
+  - action: utter_updatemobileno
+  
+- story: customercarenos path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  - intent: acc_balancec
+  - action: utter_balancec
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancef
+  - action: utter_balancef
+  - intent: acc_minaccbalance
+  - action: utter_minaccbalance
+  - intent: updatemobileno
+  - action: utter_updatemobileno
+  - intent: customercareno
+  - action: utter_customercareno
+  
+- story: generatepin path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  - intent: acc_balancec
+  - action: utter_balancec
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancef
+  - action: utter_balancef
+  - intent: acc_minaccbalance
+  - action: utter_minaccbalance
+  - intent: updatemobileno
+  - action: utter_updatemobileno
+  
+- story: unblockdebitcards path 1
+  steps:
+  - intent: acc_transfera
+  - action: utter_transfera
+  - intent: acc_transferb
+  - action: utter_transferb
+  - intent: acc_transferc
+  - action: utter_transferc
+  - intent: acc_transferq
+  - action: utter_transferq
+  - intent: acc_balancea
+  - action: utter_balancea  
+  - intent: acc_balanceb
+  - action: utter_balanceb
+  - intent: acc_balancec
+  - action: utter_balancec
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancee
+  - action: utter_balancee
+  - intent: acc_balancef
+  - action: utter_balancef
+  - intent: acc_minaccbalance
+  - action: utter_minaccbalance
+  - intent: updatemobileno
+  - action: utter_updatemobileno
+  - intent: unblockdebitcard
+  - action: utter_unblockdebitcard
+  
+- story: manage debit card
+  steps:
+  - intent: debit_card_work
+  - action: utter_debit_card_work
+  - intent: fees_in_transaction
+  - action: utter_fees_in_transaction
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: debit card expire
+  steps:
+  - intent: debit_card_expire
+  - action: utter_debit_card_expire
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: charge debit replacement
+  steps:
+  - intent: charge_debit_replacement
+  - action: utter_charge_debit_replacement
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: pin block procedure
+  steps:
+  - intent: pin_block_procedure
+  - action: utter_pin_block_procedure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: limit transaction
+  steps:
+  - intent: limit_transaction
+  - action: utter_limit_transaction
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: iam blocking
+  steps:
+  - intent: iam_blocking
+  - action: utter_iam_blocking
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+
+- story: interactive_story_1
+  steps:
+  - intent: pin_block_procedure
+  - action: utter_pin_block_procedure
+  - action: utter_did_that_help
+  - intent: stop
+
+- story: dc retailTransaction
+  steps:
+  - intent: dc_retailTransaction
+  - action: utter_dc_retailTransaction
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc issueDate
+  steps:
+  - intent: dc_issueDate
+  - action: utter_dc_issueDate
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc domesticPayment
+  steps:
+  - intent: dc_domesticPayment
+  - action: utter_dc_domesticPayment
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc forget pin
+  steps:
+  - intent: dc_forget_pin
+  - action: utter_dc_forget_pin
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc pin safe
+  steps:
+  - intent: dc_pin_safe
+  - action: utter_dc_pin_safe
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc stolen
+  steps:
+  - intent: dc_stolen
+  - action: utter_dc_stolen
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc register  
+  steps:
+  - intent: dc_register  
+  - action: utter_dc_register  
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc ch limit
+  steps:
+  - intent: dc_ch_limit  
+  - action: utter_dc_ch_limit  
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: dc dailyLimit
+  steps:
+  - intent: dc_dailyLimit
+  - action: utter_dc_dailyLimit
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+ 
+- story: dc validity
+  steps:
+  - intent: dc_validity
+  - action: utter_dc_validity
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+ 
+- story: dc replDamage
+  steps:
+  - intent: dc_replDamage
+  - action: utter_dc_replDamage
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc mobReg
+  steps:
+  - intent: dc_mobReg
+  - action: utter_dc_mobReg
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc autoRecharge
+  steps:
+  - intent: dc_autoRecharge
+  - action: utter_dc_autoRecharge
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc deactDC
+  steps:
+  - intent: dc_deactDC
+  - action: utter_dc_deactDC
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc actDC
+  steps:
+  - intent: dc_actDC
+  - action: utter_dc_actDC
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: dc senderCharge
+  steps:
+  - intent: dc_senderCharge
+  - action: utter_dc_senderCharge
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: bank_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: branchlocator_c
+    entities:
+    - city: chennai
+  - action: utter_branchlocatorc
+  
+- story: bank_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: branchlocator_b
+    entities:
+    - city: bangalore
+  - action: utter_branchlocatorb
+  
+- story: bank_story_3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: branchlocator_m
+    entities:
+    - city: mumbai
+  - action: utter_branchlocatorm
